@@ -52,7 +52,7 @@
 
 </div>
 <div class="contactform">
-<form>
+<form id="contactForm">
 <h2>Send Message</h2>
 
 	<div class="inputbox">
@@ -77,5 +77,23 @@
 </div>
 </section>  
 </section>
+<script>
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault(); 
+
+    // Optional: get user input values
+    const name = form.querySelector('input[type="text"]').value;
+    const email = form.querySelectorAll('input[type="text"]')[1].value;
+    const comment = form.querySelector('textarea').value;
+
+    // Show notification
+    alert("Thank you! Your comment has been successfully added.");
+
+    
+    form.reset();
+});
+</script>
 </body>
 </html>
