@@ -233,7 +233,7 @@ grid-area: skillsect;
 	background-color: #2b2a2f;
 	padding: 4px 6px;
 	border-top: 1px solid #000;
-	border-bottom: : 1px solid #444;
+	border-bottom: 1px solid #444;
 	border-radius: 15px;
 }
 
@@ -262,7 +262,7 @@ grid-area: skillsect;
 	
 	grid-template-areas: 'imagesect skillsect'
 						'infosect infosect';
-}
+}}
 .skillSection{
 	grid-template-columns: 1fr;
 	grid-gap: 20px;
@@ -273,6 +273,6 @@ grid-area: skillsect;
 	
 	grid-template-areas: 'imagesect imagesect'
 						'infosect infosect'
-}						'skillsect skillsect';
-}
+						'skillsect skillsect';
+}}
 
